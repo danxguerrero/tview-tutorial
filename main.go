@@ -36,7 +36,7 @@ func main() {
 	app = tview.NewApplication()
 	view = tview.NewModal().
 		SetText(currentTimeString()).
-		AddButtons([]string{"Quit", "Cancel"}).
+		AddButtons([]string{"Quit"}).
 		SetDoneFunc(func(buttonIndex int, buttonLabel string) {
 			if buttonLabel == "Quit" {
 				app.Stop()
